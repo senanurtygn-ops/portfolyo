@@ -1,0 +1,324 @@
+/* CSS Değişkenleri (Temalar) */
+:root {
+    --bg-color: #f8f9fa;
+    --bg-alt: #ffffff;
+    --text-color: #212529;
+    --text-muted: #6c757d;
+    --primary-color: #4361ee;
+    --primary-hover: #3a56d4;
+    --card-bg: #ffffff;
+    --border-color: #e9ecef;
+    --nav-bg: rgba(255, 255, 255, 0.95);
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --bg-alt: #1e1e1e;
+    --text-color: #f8f9fa;
+    --text-muted: #adb5bd;
+    --primary-color: #4cc9f0;
+    --primary-hover: #3ab0d1;
+    --card-bg: #2d2d2d;
+    --border-color: #444;
+    --nav-bg: rgba(18, 18, 18, 0.95);
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Genel Stiller */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.4s ease, color 0.4s ease;
+    overflow-x: hidden;
+}
+
+.bg-alt {
+    background-color: var(--bg-alt);
+}
+
+/* Navigasyon */
+.navbar {
+    background-color: var(--nav-bg);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border-color);
+    transition: all 0.4s ease;
+}
+
+.navbar-brand, .nav-link {
+    color: var(--text-color) !important;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+/* Tema Butonu */
+.btn-tema {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.btn-tema:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    transform: rotate(15deg);
+}
+
+/* Hero Bölümü */
+.hero-section {
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+.vurgu {
+    color: var(--primary-color);
+}
+
+.daktilo-kapsayici {
+    font-size: 2.5rem;
+    font-weight: 600;
+    min-height: 60px; /* Zıplamayı önler */
+}
+
+.imlec {
+    animation: blink 1s infinite;
+    color: var(--primary-color);
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.profil-cercevesi {
+    position: relative;
+    display: inline-block;
+}
+
+.profil-foto {
+    border-radius: 30px 100px 30px 100px; /* Organik şekil */
+    box-shadow: var(--shadow);
+    transition: all 0.5s ease;
+    border: 5px solid var(--primary-color);
+    max-width: 80%;
+}
+
+.profil-foto:hover {
+    border-radius: 100px 30px 100px 30px;
+    transform: translateY(-10px);
+}
+
+/* Özel Butonlar */
+.custom-btn {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: 30px;
+    padding: 10px 30px;
+    transition: all 0.3s;
+}
+
+.custom-btn:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(67, 97, 238, 0.4);
+}
+
+.custom-btn-outline {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    border-radius: 30px;
+    padding: 10px 30px;
+    transition: all 0.3s;
+}
+
+.custom-btn-outline:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+/* Yetenekler */
+.bolum-basligi {
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.bolum-basligi::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background-color: var(--primary-color);
+    bottom: -10px;
+    left: 25%;
+    border-radius: 5px;
+}
+
+.progress {
+    background-color: var(--border-color);
+    border-radius: 10px;
+    overflow: visible;
+}
+
+.progress-bar {
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    position: relative;
+    animation: ilerlemeAnimasyonu 1.5s ease-out forwards;
+    width: 0; /* Başlangıçta 0, JS veya CSS animasyonu doldurur */
+}
+
+@keyframes ilerlemeAnimasyonu {
+    from { width: 0; }
+}
+
+/* Projeler */
+.filtre-btn {
+    background: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    margin: 0 5px;
+    padding: 8px 20px;
+    transition: all 0.3s;
+}
+
+.filtre-btn:hover, .filtre-btn.aktif {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+}
+
+.proje-karti {
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.proje-karti:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow) !important;
+}
+
+.card-title, .card-text {
+    color: var(--text-color);
+}
+
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+/* Footer Sosyal Medya */
+footer {
+    background-color: var(--bg-alt);
+    border-top: 1px solid var(--border-color);
+}
+
+.sosyal-ikon {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border-radius: 50%;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.sosyal-ikon:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+/* ========================================= */
+/* MOBİL UYUMLULUK (MEDIA QUERIES) BÖLÜMÜ    */
+/* ========================================= */
+
+/* Tablet ve küçük ekranlar (991px ve altı) */
+@media (max-width: 991px) {
+    .hero-section {
+        padding-top: 120px; /* Navbar hamburger menüye dönüştüğünde üstte boşluk bırakır */
+        text-align: center; /* Metinleri mobilde ortalar */
+    }
+    
+    .profil-foto {
+        max-width: 50%; /* Tablette profil fotoğrafını ideal boyuta getirir */
+        margin-bottom: 2rem;
+    }
+
+    .btn-tema {
+        margin-left: 0 !important;
+        margin-top: 10px; /* Hamburger menü açıldığında tema butonunu hizalar */
+    }
+}
+
+/* Cep telefonları (768px ve altı) */
+@media (max-width: 768px) {
+    .daktilo-kapsayici {
+        font-size: 1.8rem; /* Mobilde başlık boyutunu küçültür */
+        min-height: 80px; /* Metin uzunsa iki satıra indiğinde zıplamayı önler */
+    }
+
+    .Merhaba-yazi {
+        font-size: 1.5rem;
+    }
+
+    .lead {
+        font-size: 1rem; /* Açıklama metnini okunabilir boyuta çeker */
+    }
+
+    /* Mobilde butonları alt alta getirir ve genişletir */
+    .hero-text .custom-btn, 
+    .hero-text .custom-btn-outline {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+        margin-right: 0 !important;
+    }
+
+    /* Proje filtre butonlarını mobilde daha iyi dizmek için */
+    .filtre-btn {
+        margin-bottom: 10px;
+        font-size: 0.9rem;
+        padding: 6px 15px;
+    }
+    
+    .bolum-basligi {
+        font-size: 1.8rem;
+    }
+}
+
+/* Çok küçük telefon ekranları (576px ve altı) */
+@media (max-width: 576px) {
+    .profil-foto {
+        max-width: 70%; /* Çok küçük ekranlarda fotoğrafı çok fazla ufaltmamak için */
+    }
+    
+    .sosyal-ikon {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        font-size: 1rem;
+        margin: 0 5px;
+    }
+}

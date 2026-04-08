@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hilalnur| Dijital Portfolyo</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Portfolyo<span class="text-primary">.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#hakkimda">Hakkımda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#yetenekler">Yetenekler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projeler">Projeler</a></li>
+                    <li class="nav-item">
+                        <button id="temaTetikleyici" class="btn btn-tema ms-3">
+                            <i class="bi bi-moon-fill"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="hakkimda" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center flex-column-reverse flex-lg-row">
+                <div class="col-lg-7 text-center text-lg-start hero-text">
+                    <h2 class="Merhaba-yazi">Merhaba <span class="vurgu">Hilalnur</span></h2>
+                    <h1 class="daktilo-kapsayici"><span id="daktiloYazi"></span><span class="imlec">|</span></h1>
+                    <p class="lead mt-4">
+                         Gümüşhane Üniversitesi Bilgisayar Programcılığı öğrencisiyim. Yazılım dünyasındaki teknik becerilerimi, grafik tasarım tutkumla birleştiriyorum. HTML/CSS'ten Python'a, logo tasarımından kurumsal kimliğe kadar geniş bir yelpazede dijital çözümler üretiyor; estetik ile fonksiyonelliği tek bir noktada buluşturuyorum."
+                    </p>
+                    <div class="mt-4">
+                        <a href="#projeler" class="btn btn-primary btn-lg custom-btn me-3">Projelerimi Gör</a>
+                        <a href="#iletisim" class="btn btn-outline-primary btn-lg custom-btn-outline">İletişim</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center mb-5 mb-lg-0">
+                    <div class="profil-cercevesi">
+                        <img src="img/hy.resim.png" alt="Hilalnur Profil" class="img-fluid profil-foto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="yetenekler" class="yetenekler-section py-5">
+        <div class="container">
+            <h2 class="bolum-basligi text-center mb-5">Yeteneklerim</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h4 class="mb-4"><i class="bi bi-code-slash text-primary me-2"></i>Teknik Yetenekler</h4>
+                    
+                    <div class="yetenek-ogesi mb-3">
+                        <div class="d-flex justify-content-between"><span>HTML / CSS / JavaScript</span><span>%95</span></div>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar" role="progressbar" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="yetenek-ogesi mb-3">
+                        <div class="d-flex justify-content-between"><span>C# / Python (Django) / SQL</span><span>%60</span></div>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="yetenek-ogesi mb-3">
+                        <div class="d-flex justify-content-between"><span>Adobe Illustrator / Photoshop</span><span>%100</span></div>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar" role="progressbar" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 mb-4">
+                    <h4 class="mb-4"><i class="bi bi-person-gear text-primary me-2"></i>Kişisel Yeteneklerim</h4>
+                    
+                    <div class="yetenek-ogesi mb-3">
+                        <div class="d-flex justify-content-between"><span>Algoritmik Düşünme & Mantıksal Çözümleme</span><span>%90</span></div>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 90%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="yetenek-ogesi mb-3">
+                        <div class="d-flex justify-content-between"><span>Çevik İşbirliği  & Teknik İletişim</span><span>%85</span></div>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="yetenek-ogesi mb-3">
+                        <div class="d-flex justify-content-between"><span>Sürekli Öğrenme & Dinamik Adaptasyonu</span><span>%80</span></div>
+                        <div class="progress" style="height: 10px;">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projeler" class="projeler-section py-5 bg-alt">
+        <div class="container">
+            <h2 class="bolum-basligi text-center mb-4">Projelerim</h2>
+            
+            <div class="filtre-butonlari text-center mb-5">
+                <button class="btn filtre-btn aktif" data-filtre="hepsi">Hepsi</button>
+                <button class="btn filtre-btn" data-filtre="web">Web Teknolojileri & Geliştirme </button>
+                <button class="btn filtre-btn" data-filtre="tasarim">Görsel Tasarım & Marka Kimliği</button>
+            </div>
+
+            <div class="row d-flex justify-content-center" id="projeGalerisi">
+                <div class="col-lg-4 col-md-6 mb-4 proje-karti-sarmal tasari hepsi">
+                    <div class="card h-100 proje-karti shadow-sm border-0">
+                        <div class="card-img-top placeholder-gorsel bg-secondary d-flex align-items-center justify-content-center text-white" style="height: 200px;">
+                            <i class="bi bi-palette fs-1"></i>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Tasarım</span>
+                            <h5 class="card-title">"Gök Bilim" Görsel Tasarım & Marka Kimliği</h5>
+                            <p class="card-text text-muted">Bir teknoloji firması için Adobe Illustrator kullanılarak hazırlanan logo, kartvizit ve antetli kağıt tasarımları.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 proje-karti-sarmal web hepsi">
+                    <div class="card h-100 proje-karti shadow-sm border-0">
+                        <div class="card-img-top placeholder-gorsel bg-dark d-flex align-items-center justify-content-center text-white" style="height: 200px;">
+                            <i class="bi bi-laptop fs-1"></i>
+                        </div>
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Web</span>
+                            <h5 class="card-title">Kişisel Portfolyo Sitesi</h5>
+                            <p class="card-text text-muted">HTML5, CSS3, Bootstrap 5 ve Vanilla JS kullanılarak geliştirilmiş, responsive ve dinamik web sitesi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="iletisim" class="py-5 text-center">
+        <div class="container">
+            <h3 class="mb-4">Benimle İletişime Geç</h3>
+            <p class="mb-4 text-muted">Yeni projeler, staj fırsatları veya sadece merhaba demek için bana ulaşabilirsin!</p>
+            <a href="mailto:hilalnur61@email.com" class="btn btn-primary btn-lg custom-btn mb-4">
+                <i class="bi bi-envelope-paper me-2"></i>E-posta Gönder
+            </a>
+            
+            <div class="sosyal-medya-baglantilari mt-3">
+                <a href="https://github.com/kullaniciadi" target="_blank" class="sosyal-ikon"><i class="bi bi-github"></i></a>
+                <a href="#" target="_blank" class="sosyal-ikon"><i class="bi bi-linkedin"></i></a>
+                <a href="#" target="_blank" class="sosyal-ikon"><i class="bi bi-behance"></i></a>
+            </div>
+            <hr class="my-4" style="opacity: 0.1;">
+            <p class="copyright m-0">&copy; 2026 Hilalnur. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
