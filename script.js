@@ -79,7 +79,7 @@ const projeleriFiltrele = (kategori) => {
 };
 
 // 4. Gelişmiş Daktilo Efekti (Kendi Kendini Döndüren Yapı)
-const yazi = "Merhaba, Ben Hilalnur. Yazılımcı ve Tasarımcıyım.";
+const yazi = "Merhaba, Senanur. Yazılımcı ve Tasarımcıyım.";
 let index = 0;
 
 const daktilo = () => {
